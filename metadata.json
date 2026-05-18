@@ -1,0 +1,8 @@
+{
+  "name": "Shishu-Sneh",
+  "description": "A warm and nurturing digital companion for mothers, providing expert guidance, growth tracking, and health schedules for their baby's first year.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

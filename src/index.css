@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Nunito+Sans:wght@400;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #fff8f7;
+  --color-surface-dim: #f1d3d6;
+  --color-surface-bright: #fff8f7;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #fff0f1;
+  --color-surface-container: #ffe9ea;
+  --color-surface-container-high: #ffe1e4;
+  --color-surface-container-highest: #fadbde;
+  --color-on-surface: #28171a;
+  --color-on-surface-variant: #5b3f43;
+  --color-inverse-surface: #3e2b2e;
+  --color-inverse-on-surface: #ffecee;
+  --color-outline: #8f6f73;
+  --color-outline-variant: #e4bdc2;
+  --color-surface-tint: #bc004b;
+  --color-primary: #b80049;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #e2165f;
+  --color-on-primary-container: #fffbff;
+  --color-inverse-primary: #ffb2be;
+  --color-secondary: #ac3509;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #fe6f42;
+  --color-on-secondary-container: #631800;
+  --color-tertiary: #006a34;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #008644;
+  --color-on-tertiary-container: #f6fff3;
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  --color-primary-fixed: #ffd9de;
+  --color-primary-fixed-dim: #ffb2be;
+  --color-on-primary-fixed: #400014;
+  --color-on-primary-fixed-variant: #900038;
+  --color-secondary-fixed: #ffdbd0;
+  --color-secondary-fixed-dim: #ffb59f;
+  --color-on-secondary-fixed: #3a0a00;
+  --color-on-secondary-fixed-variant: #852300;
+  --color-tertiary-fixed: #89faa8;
+  --color-tertiary-fixed-dim: #6ddd8e;
+  --color-on-tertiary-fixed: #00210c;
+  --color-on-tertiary-fixed-variant: #005227;
+  --color-background: #fff8f7;
+  --color-on-background: #28171a;
+  --color-surface-variant: #fadbde;
+
+  --font-plus-jakarta: "Plus Jakarta Sans", sans-serif;
+  --font-nunito: "Nunito Sans", sans-serif;
+
+  --spacing-base: 8px;
+  --spacing-container-padding-mobile: 20px;
+  --spacing-container-padding-tablet: 40px;
+  --spacing-gutter: 16px;
+  --spacing-stack-sm: 12px;
+  --spacing-stack-md: 24px;
+  --spacing-stack-lg: 48px;
+
+  --radius-sm: 0.25rem;
+  --radius-default: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-full: 9999px;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-background font-nunito;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-plus-jakarta;
+  }
+}
+
+.wave-header {
+  clip-path: ellipse(110% 100% at 50% 0%);
+}
+
+.curved-header {
+  clip-path: ellipse(120% 100% at 50% 0%);
+}
+
+.custom-shadow {
+  box-shadow: 0px 4px 20px rgba(62, 39, 35, 0.08);
+}
